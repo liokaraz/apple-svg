@@ -1,0 +1,62 @@
+.icon {
+  &__laptop {
+    animation: laptop 10s infinite;
+  }
+  &__table {
+    animation: table 10s infinite;     
+  }
+  &__apple {
+    animation: apple 10s infinite;
+  }
+  &__text {    
+    animation: text_one 10s infinite;
+    font-size: 5px;
+    font-family: 'Segoe UI';
+    color: #314975;
+  }
+}
+
+@keyframes laptop {
+  0%, 40%, 80% {
+    fill: #314975;
+  }
+  20%, 60%, 100% {
+    fill: #59d034;
+    transform: rotate(360deg);
+  }
+  40% {
+    transform:  translateX(2px);
+  }
+  43% {
+    transform: translateX(-50px);
+  }
+}
+
+@keyframes table {
+  0%, 40%, 80% {
+    fill: #0d1931;
+  }
+  20%, 60%, 100% {
+    fill: #ff0036;
+    transform: rotate(360deg);
+  }
+  40% {
+    transform:  translateX(-2px);
+  }
+  43% {
+    transform: translateX(50px);
+  }
+}
+
+@keyframes apple {
+  20%, 60%, 100%{
+    transform: rotate(360deg);
+  }
+  40% {
+    transform:  translateX(2px);
+  }
+  43% {
+    transform: translateX(-50px);
+  }
+}   
+

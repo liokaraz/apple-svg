@@ -1,0 +1,289 @@
+/*UTILITIES*/
+/*! Avalanche | MIT License | @colourgarden */
+/*------------------------------------*    SETTINGS
+\*------------------------------------*/
+/* Prefix namespace for width classes. For example; 'col-'*/
+/*------------------------------------*    LOGIC aka THE MAGIC
+\*------------------------------------*/
+/*------------------------------------*    GRID LAYOUT
+\*------------------------------------*/
+.grid {
+  display: block;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  margin-left: -20px;
+  font-size: 0rem; }
+
+.grid__cell {
+  box-sizing: border-box;
+  display: inline-block;
+  width: 100%;
+  padding: 0;
+  padding-left: 20px;
+  margin: 0;
+  vertical-align: top;
+  font-size: 1rem; }
+
+/*------------------------------------*    GRID WIDTHS
+\*------------------------------------*/
+.\31\/2, .\32\/4 {
+  width: 50%; }
+
+.\31\/3 {
+  width: 33.33333%; }
+
+.\32\/3 {
+  width: 66.66667%; }
+
+.\31\/4 {
+  width: 25%; }
+
+.\33\/4 {
+  width: 75%; }
+
+@media screen and (max-width: 499px) {
+  .\31\/2--thumb, .\32\/4--thumb {
+    width: 50%; }
+  .\31\/3--thumb {
+    width: 33.33333%; }
+  .\32\/3--thumb {
+    width: 66.66667%; }
+  .\31\/4--thumb {
+    width: 25%; }
+  .\33\/4--thumb {
+    width: 75%; } }
+
+@media screen and (min-width: 500px) and (max-width: 800px) {
+  .\31\/2--handheld, .\32\/4--handheld {
+    width: 50%; }
+  .\31\/3--handheld {
+    width: 33.33333%; }
+  .\32\/3--handheld {
+    width: 66.66667%; }
+  .\31\/4--handheld {
+    width: 25%; }
+  .\33\/4--handheld {
+    width: 75%; } }
+
+@media screen and (min-width: 500px) {
+  .\31\/2--handheld-and-up, .\32\/4--handheld-and-up {
+    width: 50%; }
+  .\31\/3--handheld-and-up {
+    width: 33.33333%; }
+  .\32\/3--handheld-and-up {
+    width: 66.66667%; }
+  .\31\/4--handheld-and-up {
+    width: 25%; }
+  .\33\/4--handheld-and-up {
+    width: 75%; } }
+
+@media screen and (max-width: 800px) {
+  .\31\/2--pocket, .\32\/4--pocket {
+    width: 50%; }
+  .\31\/3--pocket {
+    width: 33.33333%; }
+  .\32\/3--pocket {
+    width: 66.66667%; }
+  .\31\/4--pocket {
+    width: 25%; }
+  .\33\/4--pocket {
+    width: 75%; } }
+
+@media screen and (min-width: 801px) and (max-width: 1024px) {
+  .\31\/2--lap, .\32\/4--lap {
+    width: 50%; }
+  .\31\/3--lap {
+    width: 33.33333%; }
+  .\32\/3--lap {
+    width: 66.66667%; }
+  .\31\/4--lap {
+    width: 25%; }
+  .\33\/4--lap {
+    width: 75%; } }
+
+@media screen and (min-width: 801px) {
+  .\31\/2--lap-and-up, .\32\/4--lap-and-up {
+    width: 50%; }
+  .\31\/3--lap-and-up {
+    width: 33.33333%; }
+  .\32\/3--lap-and-up {
+    width: 66.66667%; }
+  .\31\/4--lap-and-up {
+    width: 25%; }
+  .\33\/4--lap-and-up {
+    width: 75%; } }
+
+@media screen and (max-width: 1024px) {
+  .\31\/2--portable, .\32\/4--portable {
+    width: 50%; }
+  .\31\/3--portable {
+    width: 33.33333%; }
+  .\32\/3--portable {
+    width: 66.66667%; }
+  .\31\/4--portable {
+    width: 25%; }
+  .\33\/4--portable {
+    width: 75%; } }
+
+@media screen and (min-width: 1025px) {
+  .\31\/2--desk, .\32\/4--desk {
+    width: 50%; }
+  .\31\/3--desk {
+    width: 33.33333%; }
+  .\32\/3--desk {
+    width: 66.66667%; }
+  .\31\/4--desk {
+    width: 25%; }
+  .\33\/4--desk {
+    width: 75%; } }
+
+@media screen and (min-width: 1160px) {
+  .\31\/2--widescreen, .\32\/4--widescreen {
+    width: 50%; }
+  .\31\/3--widescreen {
+    width: 33.33333%; }
+  .\32\/3--widescreen {
+    width: 66.66667%; }
+  .\31\/4--widescreen {
+    width: 25%; }
+  .\33\/4--widescreen {
+    width: 75%; } }
+
+@media screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
+  .\31\/2--retina, .\32\/4--retina {
+    width: 50%; }
+  .\31\/3--retina {
+    width: 33.33333%; }
+  .\32\/3--retina {
+    width: 66.66667%; }
+  .\31\/4--retina {
+    width: 25%; }
+  .\33\/4--retina {
+    width: 75%; } }
+
+/*BASE*/
+/*LAYOUT*/
+body {
+  margin-left: 80px;
+  margin-right: 80px;
+  background-color: #6a6a6a; }
+
+/*COMPONENTS*/
+.icon__laptop {
+  -webkit-animation: laptop 10s infinite;
+  animation: laptop 10s infinite; }
+
+.icon__table {
+  -webkit-animation: table 10s infinite;
+  animation: table 10s infinite; }
+
+.icon__apple {
+  -webkit-animation: apple 10s infinite;
+  animation: apple 10s infinite; }
+
+.icon__text-two {
+  -webkit-animation: text_two 10s infinite;
+  animation: text_two 10s infinite;
+  display: none; }
+
+.icon__text {
+  -webkit-animation: text_one 10s infinite;
+  animation: text_one 10s infinite;
+  font-size: 5px;
+  font-family: 'Segoe UI';
+  color: #314975; }
+
+@-webkit-keyframes laptop {
+  0%, 40%, 80% {
+    fill: #314975; }
+  20%, 60%, 100% {
+    fill: #59d034;
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg); }
+  40% {
+    -webkit-transform: translateX(2px);
+    transform: translateX(2px); }
+  43% {
+    -webkit-transform: translateX(-50px);
+    transform: translateX(-50px); } }
+
+@keyframes laptop {
+  0%, 40%, 80% {
+    fill: #314975; }
+  20%, 60%, 100% {
+    fill: #59d034;
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg); }
+  40% {
+    -webkit-transform: translateX(2px);
+    transform: translateX(2px); }
+  43% {
+    -webkit-transform: translateX(-50px);
+    transform: translateX(-50px); } }
+
+@-webkit-keyframes table {
+  0%, 40%, 80% {
+    fill: #0d1931; }
+  20%, 60%, 100% {
+    fill: #ff0036;
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg); }
+  40% {
+    -webkit-transform: translateX(-2px);
+    transform: translateX(-2px); }
+  43% {
+    -webkit-transform: translateX(50px);
+    transform: translateX(50px); } }
+
+@keyframes table {
+  0%, 40%, 80% {
+    fill: #0d1931; }
+  20%, 60%, 100% {
+    fill: #ff0036;
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg); }
+  40% {
+    -webkit-transform: translateX(-2px);
+    transform: translateX(-2px); }
+  43% {
+    -webkit-transform: translateX(50px);
+    transform: translateX(50px); } }
+
+@-webkit-keyframes apple {
+  20%, 60%, 100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg); }
+  40% {
+    -webkit-transform: translateX(2px);
+    transform: translateX(2px); }
+  43% {
+    -webkit-transform: translateX(-50px);
+    transform: translateX(-50px); } }
+
+@keyframes apple {
+  20%, 60%, 100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg); }
+  40% {
+    -webkit-transform: translateX(2px);
+    transform: translateX(2px); }
+  43% {
+    -webkit-transform: translateX(-50px);
+    transform: translateX(-50px); } }
+
+@-webkit-keyframes text_one {
+  40%, 43% {
+    color: white; } }
+
+@keyframes text_one {
+  40%, 43% {
+    color: white; } }
+
+@-webkit-keyframes text_two {
+  43% {
+    display: visible; } }
+
+@keyframes text_two {
+  43% {
+    display: visible; } }
